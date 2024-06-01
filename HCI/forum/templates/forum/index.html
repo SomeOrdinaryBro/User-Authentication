@@ -1,0 +1,36 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page | WebAuth</title>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://bootswatch.com/5/lux/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="{% static 'css/homepage.css' %}" />
+  </head>
+
+
+
+  <body>
+    <main class="d-flex align-items-center justify-content-center vh-100">
+      <div class="card-container d-flex flex-column align-items-center">
+        <div class="card mb-4 p-4 text-center">
+          <a href="{% url 'login' %}" class="stretched-link">
+            <h2>Login</h2>
+          </a>
+        </div>
+        <div class="card p-4 text-center">
+          <a href="{% url 'register' %}" class="stretched-link">
+            <h2>Register an Account</h2>
+          </a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

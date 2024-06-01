@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/404.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Sorry, this page doesn't exist :(</h1>
+        <p>The page you're looking for might have been removed, had its name changed, or is temporarily unavailable.</p>
+        <a href="{% url 'homepage' %}" class="button">Go to Homepage</a>
+    </div>
+</body>
+</html>
