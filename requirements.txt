@@ -1,7 +1,7 @@
 asgiref==3.8.1
 crispy-bootstrap5==2024.2
 distlib==0.3.8
-Django==5.0.9
+Django==5.0.11
 django-crispy-forms==2.1
 django-login-required-middleware==0.9.0
 django-password-validators==1.7.3
